@@ -1,0 +1,156 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #EB5757;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    border-style: double;
+    border-color: black;
+    border-width: 10px;
+}
+
+.minute-hand{
+    display: flex;
+    background-color: white;
+    height: 175px;
+    width: 5px;
+    /*transform: rotate(90deg) translate3d(85px,85px,0);*/
+    animation: cycle 6s infinite linear;
+}
+
+.second-hand{
+    display: flex;
+    background-color: white;
+    height: 175px;
+    width: 5px;
+    animation: cycle 60s infinite linear;
+}
+
+@keyframes cycle {
+    from{
+        transform: rotate(0deg);
+        transform-origin: bottom left;
+    }
+
+    to{
+        transform: rotate(360deg);
+        transform-origin: bottom left;
+    }
+}
+
+
+.circle{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 41%;
+    left: 49%;
+}
+
+
+.clock p {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 550px;
+}
+
+#a {
+    top: 40px;
+    left: 200px;
+}
+
+#b {
+    top: 90px;
+    left: 240px;
+}
+
+#c {
+    top: 150px;
+    left: 260px;
+}
+
+#d {
+    top: 210px;
+    left: 240px;
+}
+
+#e {
+    top: 260px;
+    left: 190px;
+}
+
+#f {
+    top: 280px;
+    left: 120px;
+}
+
+#g {
+    top: 260px;
+    left: 50px;
+}
+
+#h {
+    top: 210px;
+    left: 10px;
+}
+
+#i {
+    top: 150px;
+    left: -10px;
+}
+
+#j {
+    top: 90px;
+    left: -10px;
+}
+
+#k {
+    top: 40px;
+    left: 40px;
+}
+
+#l {
+    top: 20px;
+    left: 110px;
+}
+
+.numbers {
+    color: white;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    font-weight: bolder;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #f00f0f, 0 0 20px #fff, 0 0 30px #930ac9, 0 0 40px #e60073, 0 0 50px #930ac9, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #db890f, 0 0 50px #db890f, 0 0 60px #ff4da6, 0 0 70px #a5b1a4, 0 0 80px #ff4da6;
+    }
+  }
